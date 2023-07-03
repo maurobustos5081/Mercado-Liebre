@@ -4,24 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi primer documento en HTML</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b2517c3666.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Libre">
-      <nav>Lugar para poner la barra de busqueda</nav>
-      <p>Comprá en cuotas y sin tarjeta de crédito</p>
-      <nav>
+      <img class="header__logo" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Libre">
+      <nav class="header__buscador"><input type="text" placeholder="Buscar productos, marcas" ></nav>
+      <section class="header__lupa"><button class="lupa-button"><i class="fa fa-search"></i></button></section>
+      <i id="manoDolar" class="fa-solid fa-hand-holding-dollar"></i>
+      <p class="header__compraCuotas">Comprá en cuotas y sin tarjeta de crédito</p>
+      <nav class="header__secciones">
         <ul>
           <li><a href="">Ofertas</a></li>
           <li><a href="">Tiendas Oficiales</a></li>
           <li><a href="">Vender</a></li>
           <li><a href="">Ayuda</a></li>
-        
+        </ul>
+        <ul>
           <li><a href="">Creá tu cuenta</a></li>
           <li><a href="">Ingresá</a></li>
           <li><a href="">Mis compras</a></li>
         </ul>
       </nav>
+      <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+        </div> 
     </header>
     <main>
       <section>
@@ -71,16 +81,19 @@
     </main>
     <footer>
       <section> 
+        <i id="tarjeta" class="fa-solid fa-credit-card" style="color: #005eff;"></i>
         <p><strong>Pagá con tarjeta o en efectivo</strong></p>
         <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
         puntos de pago. ¡Y siempre es seguro!</p>
       </section>
       <section>
+        <i id="regalo" class="fa-solid fa-gift" style="color: #005eff;"></i>
         <p><strong>Envío gratis desde $ 2.500</strong></p>
         <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
         productos. Es un beneficio de Mercado Puntos.</p>
       </section>
       <section>
+        <i id="regalo"   class="fa-solid fa-user-shield" style="color: #005eff;"></i>
         <p><strong>Seguridad, de principio a fin</strong></p>
         <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
       </section>

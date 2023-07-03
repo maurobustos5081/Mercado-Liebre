@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+header{
+    background-color: #EAC926;
+    font-family: 'Roboto';
+    font-size: 12px;
+    
+}
+
+.header__logo{
+    width: 130px;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.header__buscador{
+    margin-left: 15px;
+}
+
+#lupa{
+    margin-left: 1px;
+    margin-top: 2px;
+}
+
+.header__lupa{
+    
+    margin-left: 16px;
+    margin-top: 2px;
+}
+
+#manoDolar{
+    margin-left: 45px;
+    margin-top: 15px
+}
+
+.header__compraCuotas{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+.burger-menu{
+    border-radius: 3px;
+    background-color: #2325cf;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    margin: 0 auto;
+
+}
+
+.burger-menu i{
+    font-size: 20px;
+    margin-top: 5px;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+#tarjeta{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#regalo{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#seguridad{
+    font-size: 2em;
+    margin-bottom: 10px;
+}

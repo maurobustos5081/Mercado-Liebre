@@ -4,5 +4,5 @@
 
 [TP2: Agregando estilos](https://github.com/maurobustos5081/Mercado-Liebre/tree/TP_Agregando_estilos)
 
-[TP3: Diseño adaptativo]([https://github.com/maurobustos5081/Mercado-Liebre/tree/Dise%C3%B1o_adaptativo)
+[TP3: Diseño adaptativo]([https://github.com/maurobustos5081/Mercado-Liebre/tree/Diseño_adaptativo)
 

@@ -12,8 +12,10 @@
   <body>
     <header>
       <img class="header__logo" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Libre">
-      <nav class="header__buscador"><input type="text" placeholder="Buscar productos, marcas" ></nav>
-      <section class="header__lupa"><button class="lupa-button"><i class="fa fa-search"></i></button></section>
+      <div class="header__buscadorYlupa">
+        <nav class="header__buscador"><input type="text" placeholder="Buscar productos, marcas" ></nav>
+        <section class="header__lupa"><button class="lupa-button"><i class="fa fa-search"></i></button></section>
+      </div>
       <i id="manoDolar" class="fa-solid fa-hand-holding-dollar"></i>
       <p class="header__compraCuotas">Comprá en cuotas y sin tarjeta de crédito</p>
       <nav class="header__secciones">
@@ -24,9 +26,9 @@
           <li><a href="">Ayuda</a></li>
         </ul>
         <ul>
-          <li><a href="">Creá tu cuenta</a></li>
-          <li><a href="">Ingresá</a></li>
-          <li><a href="">Mis compras</a></li>
+          <li><a href="">Creá tu cuenta</a> <i class="fa-regular fa-address-card"></i></li>
+          <li><a href="">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+          <li><a href="">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
         </ul>
       </nav>
       <div class="burger-menu">
@@ -36,47 +38,83 @@
     <main>
       <section>
         <h3>Basado en la ultima visita</h3>
-        <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera">
-        <p>$6.770</p>
-        <p>40% OFF</p>
-        <p><strong>Cafetera Moulinex</strong></p>
-        
-        <img src="/images/img-macbook-pro-2019.jpg" alt="Macbook">
-        <p>$230.000</p>
-        <p>20% off</p>
-        <p><strong>MacBook Pro 2019</strong></p>
-
-        <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy">
-        <p>$70.500</p>
-        <p>10% of</p>
-        <p><strong>Samsung Galaxy S10</strong></p>
-
-        <img src="/images/img-tv-samsung-smart.jpg" alt="Smart tv Samsung">
-        <p>$23.200</p>
-        <p>5% of</p>
-        <p><strong>SmartTv Samsung 43"</strong></p>
+        <article>
+          
+          <img class="imagenes" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera">
+          <div class="main__section__arcticle--informacion">
+            <i class="fa-solid fa-truck" id="camion"></i>
+            <p>$6.770</p>
+            <p class="main__section__arcticle--descuento">40% OFF</p>
+            <p><strong>Cafetera Moulinex</strong></p>
+          </div>
+        </article>
+        <article>
+          <img class="imagenes" src="/images/img-macbook-pro-2019.jpg" alt="Macbook">
+          <div class="main__section__arcticle--informacion">
+            <i class="fa-solid fa-truck" id="camion"></i>
+            <p>$230.000</p>
+            <p>20% off</p>
+            <p><strong>MacBook Pro 2019</strong></p>
+          </div>
+        </article>
+        <article>
+          <img class="imagenes" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy">
+          <div class="main__section__arcticle--informacion">
+            <i class="fa-solid fa-truck" id="camion"></i>
+            <p>$70.500</p>
+            <p>10% of</p>
+            <p><strong>Samsung Galaxy S10</strong></p>
+          </div>
+        </article>
+        <article>
+          <img class="imagenes" src="/images/img-tv-samsung-smart.jpg" alt="Smart tv Samsung">
+          <div class="main__section__arcticle--informacion">
+            <i class="fa-solid fa-truck" id="camion"></i>
+            <p>$23.200</p>
+            <p>5% of</p>
+            <p><strong>SmartTv Samsung 43"</strong></p>
+          </div>
+          </article>
       </section>
       <section>
-        <h3>Sección de Ofertas</h3>
-        <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera">
-        <p>$6.770</p>
-        <p>40% OFF</p>
-        <p><strong>Cafetera Moulinex</strong></p>
-        
-        <img src="/images/img-macbook-pro-2019.jpg" alt="Macbook">
-        <p>$230.000</p>
-        <p>20% off</p>
-        <p><strong>MacBook Pro 2019</strong></p>
-
-        <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy">
-        <p>$70.500</p>
-        <p>10% of</p>
-        <p><strong>Samsung Galaxy S10</strong></p>
-
-        <img src="/images/img-tv-samsung-smart.jpg" alt="Smart tv Samsung">
-        <p>$23.200</p>
-        <p>5% of</p>
-        <p><strong>SmartTv Samsung 43"</strong></p>
+      <h3>Sección de Ofertas</h3>
+        <article>
+          <img class="imagenes" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera">
+          <div class="main__section__arcticle--informacion">
+            <i class="fa-solid fa-truck" id="camion"></i>
+            <p>$6.770</p>
+            <p>40% OFF</p>
+            <p><strong>Cafetera Moulinex</strong></p>
+          </div>
+        </article>
+        <article>
+          <img class="imagenes" src="/images/img-macbook-pro-2019.jpg" alt="Macbook">
+          <div class="main__section__arcticle--informacion">
+            <i class="fa-solid fa-truck" id="camion"></i>
+            <p>$230.000</p>
+            <p>20% off</p>
+            <p><strong>MacBook Pro 2019</strong></p>
+          </div>          
+        </article>
+        <article>
+          <img class="imagenes" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy">
+          <div class="main__section__arcticle--informacion">
+            <i class="fa-solid fa-truck" id="camion"></i>
+            <p>$70.500</p>
+            <p>10% of</p>
+            <p><strong>Samsung Galaxy S10</strong></p>
+          </div>
+        </article>
+        <article>
+          <img class="imagenes" src="/images/img-tv-samsung-smart.jpg" alt="Smart tv Samsung">
+          <div class="main__section__arcticle--informacion">
+            <i class="fa-solid fa-truck" id="camion"></i>
+            <p>$23.200</p>
+            <p>5% of</p>
+            <p><strong>SmartTv Samsung 43"</strong></p>
+          </div>
+          
+        </article>
       </section>
     </main>
     <footer>

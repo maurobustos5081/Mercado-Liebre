@@ -106,10 +106,10 @@ main{
     margin: 0 auto;
 }
 
-section{
-    /* display: flex;
-    flex-wrap: wrap; */
-}
+/* section{
+    display: flex;
+    flex-wrap: wrap;
+} */
 
 .main__section__tarjetas{
     display: flex;
@@ -122,7 +122,7 @@ article{
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap:wrap
+    /* flex-wrap: wrap */
     align-content: center;
     width: 250px;
 }

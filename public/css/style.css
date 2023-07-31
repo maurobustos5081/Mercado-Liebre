@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+* {
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box ;
+}
 
 /* MOBILE */
 html{
@@ -7,6 +12,7 @@ html{
 }
 
 header{
+    
     background-color: #EAC926;
     font-family: 'Roboto';
     font-size: 12px;
@@ -14,27 +20,37 @@ header{
     
 }
 
+.logoYlupa{
+    display: flex;
+    
+}
+
 .header__logo{
-    width: 130px;
-    margin-top: 30px;
-    margin-left: 25px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-grow: 0.5;
+    width: 150px;
+    padding: 10px;
+    
 }
 
 .header__buscadorYlupa{
     display: flex;
+    flex-grow: 0.5;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
+    
 
 }
-.header__buscador{
+.header__buscador input{
     margin-left: 15px;
+    width: 120px;
 }
 
 #lupa{
     margin-left: 1px;
+  
 }
 
 .header__lupa{
@@ -91,20 +107,30 @@ main{
 }
 
 section{
-    
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.main__section__tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
 }
 
 article{
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap:wrap
     align-content: center;
+    width: 250px;
 }
 
 h3{
     font-size: 25px;
     text-align: center;
+    margin: 20px 0px;
 }
 
 .imagenes{
@@ -114,19 +140,51 @@ h3{
 }
 
 .main__section__arcticle--informacion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 1px;
     border: 1px solid #ebebeb;
     padding: 15px;
     background-color: white;
+    position: relative;
+}
+
+.main__section__arcticle_precioYdescuento{
+    display: flex;
+}
+.main__section__arcticle--precio{
+    display: flex;
+    flex-grow: 0.30;
 }
 
 .main__section__arcticle--descuento{
+    display: flex;
+    flex-grow: 0.70;
     color: green;
 }
 
-#camion{
-    color: rgb(4, 143, 4);
+.main__section__arcticle--articulo{
+    color: grey;
+    display: flex;
+    margin-top: 20px;
 }
+
+#camion{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
 
 footer{
     text-align: center;
@@ -150,15 +208,52 @@ footer{
 
 /* TABLET */
 @media (min-width: 361px){
-    .header__logo{
-        width: 250px;
-        margin-top: 30px;
-        margin-left: 25px;
-        margin-bottom: 10px;
+    .header_logo-buscador-compra{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
+    .header__logo{
+        width: 200px;
+        padding: 20px;
+        flex-grow: 1;
+    }
+
+    .header__buscadorYlupa{
+        display: flex;
+        flex-grow: 1;
+        
+    
+    }
+
+    .header__buscador input{
+        
+        width: 160px;
+    }
+
+    .header__compraCuotas{
+        margin: 0px;
+        padding: 0px;
+    }
     .header__secciones{
-        display:block;
+        display: flex;
+    }
+
+    .header__secciones__panel{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header__secciones__ingreso{
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    .header__secciones li{
+        display: inline;
+        margin: 0px 8px;
     }
 
     .burger-menu{
@@ -172,5 +267,21 @@ footer{
 
 /* DESKTOP */
 @media (min-width: 769px){
+    .header__logo{
+        width: 300px;
+        padding: 20px;
+        flex-grow: 1;
+    }
 
+    .header__buscadorYlupa{
+        display: flex;
+        flex-grow: 1;
+        
+    
+    }
+
+    .header__buscador input{
+        
+        width: 450px;
+    }
 }

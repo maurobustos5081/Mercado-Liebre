@@ -6,6 +6,16 @@
     box-sizing: border-box ;
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+    
+  }
+
+  a:visited {
+    color: none;
+  }
+
 /* MOBILE */
 html{
     width: 100%;
@@ -206,6 +216,112 @@ footer{
     margin-bottom: 10px;
 }
 
+/* Register */
+
+.register__main{
+    display: flex;
+    justify-content: center;
+}
+
+.register__main_formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border: black 1px solid;
+    background-color: rgb(228, 228, 228);
+    width: 300px;
+    padding: 0px 10px;
+    margin: 5px 0px;
+}
+
+.register__main__formulario__rectangulos input{
+    display: flex;
+    margin: 20px 0px;
+    width: 220px;
+    height: 25px;
+    
+}
+
+.register__main_formulario h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.register__main__formulario__perfilUsuario{
+    margin: 10px 0px;
+}
+
+.register__main__formulario__perfilUsuario input{
+    margin: 10px 5px;
+}
+
+.register__main__formulario__intereses{
+    margin: 10px 0px;
+}
+
+.register__main__formulario__intereses input{
+    margin: 10px 5px;
+}
+
+.register__main__formulario__fotoPerfil{
+    margin: 10px 0px;
+}
+
+.register__main__formulario__fotoPerfil input{
+    margin: 10px 5px;
+}
+
+.register__main__formulario__botones{
+    margin: 10px 0px;
+}
+
+.register__main__formulario__botones button{
+    width: 120px;
+    height: 60px;
+    font-size: 18px;
+    background-color:#2325cf;
+    color: white;
+}
+
+/* Login */
+
+.login__main{
+    display: flex;
+    justify-content: center;
+}
+
+.login__main__formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border: black 1px solid;
+    background-color: rgb(228, 228, 228);
+    width: 300px;
+    padding: 20px 10px;
+    margin: 5px 0px;
+}
+
+.login__main__formulario input{
+    display: flex;
+    margin: 10px 0px;
+    width: 220px;
+    height: 25px;
+}
+
+.login__main__formulario button{
+    margin-top: 10px;
+    width: 220px;
+    height: 25px;
+    background-color:#2325cf;
+    color: white;
+}
+
 /* TABLET */
 @media (min-width: 361px){
     .header_logo-buscador-compra{
@@ -285,3 +401,4 @@ footer{
         width: 450px;
     }
 }
+
